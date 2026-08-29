@@ -1,11 +1,21 @@
-import { toDoList } from "./tasks";
+import { toDoList } from "./tasks.js";
 
+const tasks = toDoList()
 export function projects(){
     const projectList = []
     let nameProject = ""
     function createProject(name){
-        projectList.push(toDoList().getList)
         nameProject = name
+        projectList.push(nameProject)
     }
-    return { nameProject, createProject }
+    function insertToProject(name){
+        if(name in projectList){
+            const newToDoList = []
+            newToDoList.push(tasks.getList)
+        }else{
+            alert("Erro")
+        }
+    }
+    const showProjects = () => projectList
+    return { nameProject, createProject, showProjects, insertToProject }
 }

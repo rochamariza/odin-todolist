@@ -1,11 +1,14 @@
 import "./ASSETS/CSS/style.css"
 import "./ASSETS/JS/tasks.js"
-import { renderList, tasks, taskBox, dataBox, inter } from "./ASSETS/JS/render.js"
+import { renderList, tasksList, taskBox, dataBox, inter } from "./ASSETS/JS/render.js"
+import { projects } from "./ASSETS/JS/projects.js"
 const form = document.querySelector(".form")
+const projectsList = projects()
 
 form.addEventListener("submit", (event) =>{
     event.preventDefault()
-    tasks.createTask(taskBox.value, "teste", dataBox.value, "este")
+    tasksList.createTask(taskBox.value, "teste", dataBox.value, "este")
     inter.innerHTML = ""
-    renderList(tasks.getList())
+    renderList(tasksList.getList())
+    console.log(projectsList.showProjects())
 })

@@ -1,7 +1,8 @@
 import { toDoList } from "./tasks.js"
 
+
 const inter = document.querySelector(".tasks")
-const tasks = toDoList()
+const tasksList = toDoList()
 const taskBox = document.getElementById("texto")
 const dataBox = document.getElementById("data")
 
@@ -21,4 +22,4 @@ export function renderList(lista){
         inter.appendChild(container)
     }
 }
-export { inter, tasks, taskBox, dataBox }
+export { inter, tasksList, taskBox, dataBox }
