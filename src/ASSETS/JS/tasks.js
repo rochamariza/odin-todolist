@@ -5,7 +5,7 @@ function Task(title, description, dueDate, priority){
     this.priority = priority
 }
 
-function toDoList(){
+export function toDoList(){
     const todolist = []
     const createTask = (title, description, dueDate, priority)=>{
         const task = new Task(title, description, dueDate, priority)
@@ -21,19 +21,4 @@ function toDoList(){
     return { getList, createTask, deleteTask }
 }
 
-function renderList(lista){
-    for(let task = 0; task < lista.length; task++){
-        const container = document.createElement("div")
-        container.className = "container"
-        const titleText = document.createElement("h1")
-        titleText.className = "titleBox"
-        titleText.textContent = lista[task].title
-        const data = document.createElement("h2")
-        data.className = "data"
-        data.textContent = lista[task].dueDate
-        container.appendChild(titleText)
-        container.appendChild(data)
-        inter.appendChild(container)
-    }
-}
 
