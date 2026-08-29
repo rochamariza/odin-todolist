@@ -1,7 +1,7 @@
 import "./ASSETS/CSS/style.css"
 import "./ASSETS/JS/tasks.js"
 import { renderList, tasksList, taskBox, dataBox, inter } from "./ASSETS/JS/render.js"
-import { projects } from "./ASSETS/JS/projects.js"
+import { projectManager } from "./ASSETS/JS/projects.js"
 const form = document.querySelector(".form")
 const projectsList = projects()
 
