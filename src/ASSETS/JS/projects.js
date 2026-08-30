@@ -1,5 +1,5 @@
 import { toDoList } from "./tasks.js";
-import { tasksList } from "./render.js";
+
 
 function Projects(name, toDoList){
     this.name = name,
@@ -9,7 +9,7 @@ function Projects(name, toDoList){
 export function projectManager(){
     const projectList = []
     function createProject(name){
-        const newProject = new Projects(name, tasks.getList)
+        const newProject = new Projects(name, toDoList())
         projectList.push(newProject)
     }
     const showProjects = () => projectList

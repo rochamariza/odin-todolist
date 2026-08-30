@@ -10,20 +10,35 @@
         <button class="projects-btn">Projects</button>
     </nav>
     <main>
-        <h1>To Do List</h1>
-        <div class="interface">
-            <div class="info-input">
-                <button class="add-task">Add Task</button>
-                <div class="boxes">
-                    <form action="#" class="form">
-                        <input type="text" name="texto" id="texto">
-                        <input type="date" name="data" id="data">
-                        <input type="submit" value="submit">
-                    </form>
-                </div>
-            </div>
-            <div class="tasks">
+        <div class="side-panel" id="inactive">
+            <div class="container-projects">
 
+            </div>
+            <button class="projects-btn" id="add-project">Add Project</button>
+            <dialog class="dialog">
+                <button class="close-modal">X</button>
+                <form action="#" class="form-project">
+                    <input type="text" name="project-name" id="project-name">
+                    <input type="submit" class="submit-project-name" value="+">
+                </form>
+            </dialog>
+        </div>
+        <div class="tasks-container">
+            <h1 class="title-interface">To Do List</h1>
+            <div class="interface">
+                <div class="info-input">
+                    <button class="add-task">Add Task</button>
+                    <div class="boxes">
+                        <form action="#" class="form">
+                            <input type="text" name="texto" id="texto">
+                            <input type="date" name="data" id="data">
+                            <input type="submit" value="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="tasks">
+
+                </div>
             </div>
         </div>
     </main>

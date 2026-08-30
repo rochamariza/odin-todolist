@@ -19,7 +19,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
-nav button{
+.projects-btn{
     background-color: white;
     border: 1px solid aquamarine;
     padding: 1rem 2rem;
@@ -29,7 +29,7 @@ nav button{
     color: aqua;
     transition: 0.2s;
 }
-nav button:hover{
+.projects-btn:hover{
     opacity: 0.8;
 }
 h1{
@@ -43,12 +43,12 @@ h1{
     gap: 1rem;
     margin-block: 2rem;
 }
-form{
+.form form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-form input{
+.form form input{
     padding: 0.5rem;
     border-radius: 1rem;
     border: 1px solid;
@@ -73,4 +73,74 @@ form input{
 }
 .container h2{
     font-size: 1.1rem;
+}
+#inactive{
+    display: none;
+}
+#active{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.tasks-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.side-panel{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-self: self-start;
+    background-color: aquamarine;
+    padding: 3rem;
+    height: 100%;
+}
+dialog{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+dialog form{
+    display: flex;
+    gap: 1rem;
+}
+#add-project{
+    font-size: 0.7rem;
+}
+#project-name{
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+#project-name:focus{
+    outline: 1px solid aquamarine;
+}
+.submit-project-name{
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    background-color: aquamarine;
+    color: white;
+    cursor: pointer;
+}
+.close-modal{
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }
