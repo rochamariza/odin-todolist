@@ -6,6 +6,8 @@ const inter = document.querySelector(".tasks")
 const taskBox = document.getElementById("texto")
 const dataBox = document.getElementById("data")
 const projectContainer = document.querySelector(".container-projects")
+const todoName = document.querySelector(".title-interface")
+
 
 export function renderList(listOfToDos){
     for(let task = 0; task < listOfToDos.length; task++){
@@ -31,11 +33,13 @@ export function renderProjects(listOfProjects){
     for(let task = 0; task < listOfProjects.length; task++){
         /// Container of Projects
         const containerProjects = document.createElement("div")
-        containerProjects.className = "container-projects"
-        const titleProject = document.createElement("h2")
+        containerProjects.className = "list-projects"
+        const titleProject = document.createElement("button")
+        titleProject.className = "btn-project"
         titleProject.textContent = listOfProjects[task].name
         containerProjects.appendChild(titleProject)
         projectContainer.appendChild(containerProjects)
     }
 }
+
 export { inter, taskBox, dataBox }

@@ -8,6 +8,7 @@ const addProject = document.getElementById("add-project")
 const modal = document.querySelector(".dialog")
 const closeModal = document.querySelector(".close-modal")
 const formProject = document.querySelector(".form-project")
+const container = document.querySelector(".container-projects")
 
 modal.style.display = "none"
 
@@ -29,6 +30,7 @@ formProject.addEventListener("submit", (event) =>{
     projectMng.createProject(typeName.value)
     modal.style.display = "none"
     modal.close()
+    container.innerHTML = ""
     renderProjects(projectMng.showProjects())
 })
 closeModal.addEventListener("click", () =>{

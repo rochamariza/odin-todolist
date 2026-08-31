@@ -28,6 +28,9 @@ nav{
     font-weight: 600;
     color: aqua;
     transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .projects-btn:hover{
     opacity: 0.8;
@@ -101,6 +104,7 @@ main{
     background-color: aquamarine;
     padding: 3rem;
     height: 100%;
+    align-items: center;
 }
 dialog{
     background-color: transparent;
@@ -143,4 +147,26 @@ dialog form{
     background-color: red;
     color: white;
     cursor: pointer;
+}
+
+.btn-project{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.4rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    
+}
+.btn-project:hover{
+   background-color: white;
+   color: aquamarine;
+}
+.list-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.2rem;
 }
